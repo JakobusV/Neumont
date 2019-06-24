@@ -8,8 +8,15 @@ body{
   background-image: url("https://discordemoji.com/assets/emoji/6976_DrPhiL.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-color: rgb(207, 207, 207);
   height: 1000px;
+}
+
+.card{
+  border: solid rgb(56, 56, 56);
+  margin: 2rem;
+  width: 50rem;
 }
 
 .topnav{
@@ -27,11 +34,10 @@ body{
   }
   
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(56, 56, 56);
   }
   
   .topnav a.active {
     background-color: rgb(161, 0, 0);
-    color: white;
+    color: rgb(255, 255, 255);
   }
