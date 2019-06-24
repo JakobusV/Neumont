@@ -5,7 +5,11 @@ body, html{
 }
 
 body{
-    background-color: rgb(207, 207, 207);
+  background-image: url("https://discordemoji.com/assets/emoji/6976_DrPhiL.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(207, 207, 207);
+  height: 1000px;
 }
 
 .topnav{
