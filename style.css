@@ -16,11 +16,12 @@ body{
 .card{
   border: solid rgb(56, 56, 56);
   margin: 2rem;
-  width: 50rem;
+  width: 34rem;
 }
 
 .topnav{
     overflow: hidden;
+    width: 100%;
     background-color: rgb(37, 37, 37);
 }
 
