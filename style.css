@@ -9,7 +9,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(255, 233, 233);
   height: 1000px;
 }
 
@@ -22,38 +22,11 @@ body{
 .small-link{
   text-align: center;
   cursor: pointer;
-}
-
-li.link-neumont {
-  background-color: rgb(255, 217, 0);
+  background-color: #fefafa;
   transition: all 0.2s ease-in-out;
 }
-li.link-neumont:hover{
-  background-color: rgb(255, 153, 0);
-}
-
-li.link-github {
-  background-color: black;
-  transition: all 0.2s ease-in-out;
-}
-li.link-github:hover {
-  background-color: rgb(36, 36, 36);
-}
-
-li.link-twitter {
-  background-color: rgb(88, 213, 255);
-  transition: all 0.2s ease-in-out;
-}
-li.link-twitter:hover {
-  background-color: rgb(53, 166, 204);
-}
-
-li.link-youtube {
-  background-color: rgb(201, 0, 0);
-  transition: all 0.2s ease-in-out;
-}
-li.link-youtube:hover {
-  background-color: rgb(143, 1, 1);
+.small-link:hover{
+  background-color: #dfdfdf;
 }
 
 .topnav{
