@@ -2,32 +2,33 @@
 <html lang="en">
   <head>
     <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">Interests</a></li>
-        <li><a href="/favorite.html">Favorite Sites</a></li>
-        <li><a href="/future.html">Future Plans</a></li>
+    <nav class="topNav">
+      <ul class="navList">
+        <li class="navBlock" id="active"><a href="/index.html">Home</a></li>
+        <li class="navBlock"><a href="/about.html">Interests</a></li>
+        <li class="navBlock"><a href="/favorite.html">Favorite Sites</a></li>
+        <li class="navBlock"><a href="/future.html">Future Plans</a></li>
       </ul>
     </nav>
-    <h1>Welcome To The Homepage</h1>
-    <section>
+    <h1 style="margin-top: 50px">Welcome To The Homepage</h1>
+    <section class="small-text">
       <p>Hello and Welcome to my site, This project is for my 2019 Summer Scholars class. (Pretty cool right?)</p>
     </section>
-    <article>
-      <p>
+    <div class="grid">
+      <p class="text-block1">
         My name is Jakob Vanderniet. I'm 17, I like to play video games, and hangout with my friends. <q>I'm the 6 foot funny guy with the long girly hair and no, I don't plan on cutting it any 
         time soon.</q> I was born and raised in Utah, and I <em>really</em> enjoy living here. I always like learning new things, and recently I've been trying to learn the electric guitar. I listen to a 
         lot of Alt-Rock and that influence made me want to pick it up and play.  
       </p>
-      <p>
+      <p class="text-block2">
         <strong>To navigate this site</strong>, use the links at the top to travel between pages. There's three other pages to check out and the names are pretty self explanatory. Interests will be things I 
         like, favorite sites are places I find myself frequently visiting, and future plans is where I see myself later on down the road.
       </p>
-      <img src="me_standing.jpg" alt="A picture of me">
-    </article>
+      <img src="me_standing.jpg" alt="A picture of me" class="img-block">
+    </div>
     <footer>
       Copyright ©2019 by Jakob Vanderniet
     </footer>
