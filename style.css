@@ -1,0 +1,166 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 10px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    background-color: #e3e4e6;
+}
+
+/* ######### Tile/Grid structure ######### */
+
+.grid-container {
+    display: grid;
+    background-color: #FAFAFA;
+    padding: 10px;
+    grid-template-areas: 
+        'topGrid topGrid topGrid topGrid topGrid topGrid topGrid topGrid topGrid topGrid'
+        'today today today today today today today today today today'
+        'first first second second third third fourth fourth fifth fifth'
+        'first first second second third third fourth fourth fifth fifth'
+        'botGrid botGrid botGrid botGrid botGrid botGrid botGrid botGrid botGrid botGrid' ;
+    grid-gap: 10px;
+    border: 2px solid black;
+}
+
+.first, .second, .third, .fourth, .fifth {
+    padding: 10px;
+    background-color: rgb(202, 202, 202);
+    transition:background-color 0.2s ease;
+}
+
+.first:hover, .second:hover, .third:hover, .fourth:hover, .fifth:hover {
+    background-color: rgb(245, 244, 244);
+    cursor: pointer;
+}
+
+.opened {
+    background: rgb(255,222,138);
+    background: linear-gradient(0deg, rgba(255,222,138,1) 0%, rgba(254,254,167,1) 21%, rgba(0,212,255,1) 100%);
+}
+
+.topGrid {
+    grid-area: topGrid;
+    text-align: center;
+    padding: 20px;
+}
+.today {
+    grid-area: today;
+    padding: 10px;background: rgb(221,243,255);
+    background: linear-gradient(180deg, rgba(221,243,255,1) 0%, rgba(170,170,255,1) 20%, rgba(36,171,255,1) 55%, rgba(0,212,255,1) 100%);
+}
+.first {
+    grid-area: first;
+}
+.second {
+    grid-area: second;
+}
+.third {
+    grid-area: third;
+}
+.fourth {
+    grid-area: fourth;
+}
+.fifth {
+    grid-area: fifth;
+}
+.botGrid {
+    grid-area: botGrid;
+    text-align: center;
+    padding: 10px;
+}
+
+#content {
+    border: 2px solid #404040;
+}
+
+@media screen and (min-width:1200px) {
+    .grid-container {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:756px) {
+    html {
+        width: 756px
+    }
+}
+
+/* ######### Inner tile content ######### */
+
+.contentText {
+    float: right;
+}
+
+.place, .conditions, .conditionsDesc, .currentTemp, .image {
+    display: none;
+}
+
+.place {
+    text-align: right;
+    font-weight: bold;
+    font-size: 40px;
+}
+.placeT {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.day, .dayT {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.conditions {
+    text-align: right;
+    font-weight: bold;
+    font-size: 30px;
+}
+.conditionsT {
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.conditionsDesc {
+    text-align: right;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.conditionsDescT {
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: capitalize;
+    float: left;
+}
+
+.currentTemp {
+    text-align: right;
+    font-weight: bold;
+    font-size: 45px;
+}
+.currentTempT {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.image {
+}
