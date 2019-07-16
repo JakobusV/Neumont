@@ -1,5 +1,4 @@
 var weatherDataToday;
-var useCurrentTime;
 var requestToday = new XMLHttpRequest();
 var dateToday = new Date();
 
@@ -7,7 +6,7 @@ loadDataToday();
 
 function loadDataToday() {
     
-    requestToday.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Utah,us&units=imperial&APPID=ec7e0b6b1853dc27d717fe2036551663');
+    requestToday.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=5780993&units=imperial&APPID=ec7e0b6b1853dc27d717fe2036551663');
     requestToday.onload = loadCompleteToday;
     requestToday.send();
 }

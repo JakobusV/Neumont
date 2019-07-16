@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#" + (new Date().getDate())).toggleClass('date');
     $(".first").click(function(){
         $(this).toggleClass('opened');
         $("#place0").slideToggle(1000);
